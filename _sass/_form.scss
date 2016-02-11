@@ -1,0 +1,52 @@
+form {
+  input {
+    box-sizing: border-box;
+    display: block;
+    margin: 1em 0;
+    padding: .375em .75em;
+    border: $one-px solid #000;
+    width: 65%;
+
+    &[type='submit'] {
+      background-color: #75c3d1;
+      // color: #75c3d1;
+      color: #fff;
+      font-weight: bold;
+      border: $one-px solid $brand-dark;
+      width: 20%;
+    }
+  }
+
+  textarea {
+    border: $one-px solid #000;
+    box-sizing: border-box;
+    padding: .375em .75em;
+    width: 65%;
+  }
+}
+
+.js-form-error {
+  border-color: #a94442;
+}
+
+.js-form-warning {
+  border-color: #8a6d3b;
+}
+
+.js-form-success {
+  border-color: #3c763d;
+}
+
+@media screen and (max-width: $mobile-breakpoint - $one-px) {
+  form {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+}

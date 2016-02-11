@@ -1,0 +1,32 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: 'Pontano Sans', sans-serif;
+
+$brand-light: #75C3D1;
+$brand-dark: #308595;
+$black: #000;
+
+$mobile-breakpoint: 48em;
+$desktop-breakpoint: 62em;
+
+$nav-height: 3.75em;
+$mobile-nav-height: 2.75em;
+
+$one-px: .0625em;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  '_normalize.scss',
+  '_standard.scss',
+  '_nav.scss',
+  '_page.scss',
+  '_form.scss',
+  '_sidebar.scss',
+  'footer.scss'
+;

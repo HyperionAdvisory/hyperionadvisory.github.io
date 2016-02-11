@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {% if page.image %}
+    <div class="slider" style="background-image: url(/uploads/2016/02/{{ page.image }})"></div>
+    {% endif %}
+    <div class="page">
+      {{ content }}
+
+    </div>
+    {% include footer.html %}
+    <script src="../js/main.js"></script>
+  </body>
+</html>

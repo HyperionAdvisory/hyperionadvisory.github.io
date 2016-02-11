@@ -1,0 +1,20 @@
+# Site settings
+name: Hyperion Advisory Services
+title: 'Hyperion Advisory Services'
+description: 'Hyperion Advisory Services is a consulting firm offering broad healthcare industry expertise utilizing innovative strategies across the Revenue Cycle.'
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hyperionadvisory.com" # the base hostname & protocol for your site
+# twitter_username:
+# github_username:
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-redirect-from
+
+nav:
+    - Home: '../index.html'
+    - About: '../about/'
+    - Services: '../services/'
+    - Contact: '../contact/'

@@ -1,0 +1,65 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $brand-dark;
+  font-weight: bold;
+}
+
+div.slider {
+  background-position: center bottom;
+  background-size: cover;
+  height: 20em;
+  position: relative;
+  width: 100%;
+
+  // &::before {
+  //   bottom: 0;
+  //   left: 0;
+  //   content: '';
+  //   display: block;
+  //   height: 10em;
+  //   position: absolute;
+  //   width: 100%;
+  //   background-color: rgba(0,0,0,0.5);
+  // }
+
+  // h1 {
+  //   background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  //   bottom: 0;
+  //   color: #fff;
+  //   font-size: 3em;
+  //   left: 0;
+  //   margin: 0;
+  //   padding: 0 0 0 .33em;
+  //   position: absolute;
+  //   width: calc(100% - .33em);
+  // }
+}
+
+div.headshot {
+  float: left;
+  padding: 0 1em .5em 0;
+  img {
+    margin-top: .5em;
+    width: 18.75em;
+  }
+}
+
+img.map {
+  width: 100%;
+}
+
+@media screen and (max-width: $mobile-breakpoint - $one-px) {
+  div.slider {
+    height: 15em;
+  }
+  div.headshot {
+    float: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
