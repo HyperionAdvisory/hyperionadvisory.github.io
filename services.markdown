@@ -1,4 +1,5 @@
 ---
+title: Services
 layout: default
 active: services
 image: 'img_7776.jpg'
